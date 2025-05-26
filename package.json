@@ -1,10 +1,10 @@
 {
-  "name": "node-app",
+  "name": "app",
   "description": "Nodeapp for CICD test",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "express": "4.17.1"
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "mocha": "9.1.1",
@@ -12,6 +12,21 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test": "./node_modules/.bin/mocha ./test/test.js"
-  }
+    "test": "mocha ./test/test.js"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MOHDAMAAN088/task1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MOHDAMAAN088/task1/issues"
+  },
+  "homepage": "https://github.com/MOHDAMAAN088/task1#readme"
 }
